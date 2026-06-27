@@ -19,7 +19,7 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.2'
-          extensions: mbstring, pdo_sqlite, sqlite3, xml, bcmath, ctype, json, tokenizer
+          extensions: mbstring, pdo_sqlite, sqlite3, pdo_mysql, xml, bcmath, ctype, json, tokenizer
           coverage: none
 
       - name: Install Composer dependencies
