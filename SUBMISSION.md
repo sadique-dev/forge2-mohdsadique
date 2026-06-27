@@ -115,10 +115,10 @@
 
 ## Submission Form Fields (fill before submitting)
 
-- Full name: Mohit
-- Email: mohit@nmg.labs
-- WhatsApp / phone: +91 9876543210
-- College / institution: DTU
+- Full name: Mohd Sadique
+- Email: mohdsadique2026@gmail.com
+- WhatsApp / phone: 9598683497
+- College / institution: Pranveer Singh Institute of Technology
 - Public GitHub repo URL: https://github.com/sadique-dev/forge2-mohdsadique
 - Live URL (optional):
 - EastRouter models used: `deepseek/deepseek-v4-pro`, `z-ai/glm-5.1`, `moonshotai/kimi-k2.6`, `z-ai/glm-4.5-air`
