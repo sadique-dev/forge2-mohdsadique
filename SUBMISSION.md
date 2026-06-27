@@ -119,7 +119,7 @@
 - Email: mohit@nmg.labs
 - WhatsApp / phone: +91 9876543210
 - College / institution: DTU
-- Public GitHub repo URL: https://github.com/mohit/forge2-mohit
+- Public GitHub repo URL: https://github.com/sadique-dev/forge2-mohdsadique
 - Live URL (optional):
 - EastRouter models used: `deepseek/deepseek-v4-pro`, `z-ai/glm-5.1`, `moonshotai/kimi-k2.6`, `z-ai/glm-4.5-air`
 - Number of sprints run: 4
