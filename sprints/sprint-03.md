@@ -1,7 +1,7 @@
 # Sprint 03 — Threaded Conversations, Filters/Search & Demo Seed
 
 **Window:** 2:35 PM – 3:55 PM  
-**Status:** [ ] In progress · [ ] Done · [ ] Slipped items carried to Sprint 4
+**Status:** [ ] In progress · [x] Done · [ ] Slipped items carried to Sprint 4
 
 ---
 

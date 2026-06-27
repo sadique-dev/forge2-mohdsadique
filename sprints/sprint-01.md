@@ -1,7 +1,7 @@
 # Sprint 01 — Foundation: Multi-Tenancy, Auth & Roles
 
 **Window:** 11:00 AM – 12:20 PM  
-**Status:** [ ] In progress · [ ] Done · [ ] Slipped items carried to Sprint 2
+**Status:** [ ] In progress · [x] Done · [ ] Slipped items carried to Sprint 2
 
 ---
 

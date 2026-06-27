@@ -1,7 +1,7 @@
 # Sprint 02 — Tickets CRUD, REST API & React Frontend
 
 **Window:** 1:00 PM – 2:20 PM  
-**Status:** [ ] In progress · [ ] Done · [ ] Slipped items carried to Sprint 3
+**Status:** [ ] In progress · [x] Done · [ ] Slipped items carried to Sprint 3
 
 ---
 

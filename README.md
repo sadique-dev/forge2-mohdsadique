@@ -16,7 +16,7 @@
 |---|---|
 | PHP | 8.2+ |
 | Composer | 2.x |
-| MySQL | 8.0+ |
+| MySQL | 8.x |
 | Node.js | 20+ |
 | npm | 10+ |
 
@@ -31,8 +31,8 @@ cd forge2-pulsedesk
 
 ```bash
 cd backend
-cp ../.env.example .env
-# Edit .env — set DB_DATABASE, DB_USERNAME, DB_PASSWORD, APP_KEY placeholder
+cp .env.example .env
+# Configure your MySQL database credentials in .env.
 composer install
 php artisan key:generate
 php artisan migrate --seed

@@ -1,7 +1,8 @@
-provider: eastrouter
-base_url: https://api.eastrouter.com/v1
-api_key: ${EASTROUTER_API_KEY}
-model: deepseek/deepseek-v4-pro
+model:
+  provider: openai-codex
+  base_url: https://api.eastrouter.com/v1
+  api_key: ${EASTROUTER_API_KEY}
+  default: deepseek/deepseek-v4-pro
 
 memory:
   enabled: true

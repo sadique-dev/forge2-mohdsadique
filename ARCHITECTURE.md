@@ -145,7 +145,7 @@ See [`.github/workflows/ci.yml`](./.github/workflows/ci.yml).
 
 Steps per PR:
 1. `composer install`
-2. `php artisan migrate --seed` (against a test MySQL container)
+2. `php artisan migrate --seed` (against a MySQL database)
 3. `php artisan test` / `./vendor/bin/pest`
 4. `npm install && npm run build` (frontend lint + type-check)
 

@@ -1,7 +1,7 @@
 # Sprint 04 — SHOULD Tier: SLA Policies & Breach Indicator
 
 **Window:** 4:10 PM – 5:00 PM  
-**Status:** [ ] In progress · [ ] Done · [ ] Slipped items carried to README note
+**Status:** [ ] In progress · [x] Done · [ ] Slipped items carried to README note
 
 ---
 
