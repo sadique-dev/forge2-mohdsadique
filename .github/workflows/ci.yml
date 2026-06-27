@@ -6,6 +6,8 @@ on:
   push:
     branches: [ main ]
 
+permissions: write-all
+
 jobs:
   backend:
     name: Laravel Tests
@@ -43,7 +45,15 @@ jobs:
 
       - name: Run tests (Pest)
         working-directory: backend
-        run: ./vendor/bin/pest --ci
+        run: |
+          ./vendor/bin/pest --ci > test-results.txt 2>&1 || (
+            git config --global user.email "ci@pulsedesk.local"
+            git config --global user.name "CI Runner"
+            git add test-results.txt
+            git commit -m "ci: dump test failure log [skip ci]"
+            git push
+            exit 1
+          )
         env:
           DB_CONNECTION: sqlite
           DB_DATABASE: ":memory:"
