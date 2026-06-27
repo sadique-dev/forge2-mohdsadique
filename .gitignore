@@ -16,7 +16,7 @@ backend/vendor/
 backend/storage/app/
 backend/storage/framework/
 backend/storage/logs/
-backend/bootstrap/cache/
+
 backend/.phpunit.cache/
 
 # Frontend build
@@ -37,3 +37,5 @@ desktop.ini
 
 # Logs
 *.log
+
+mysql-data/
