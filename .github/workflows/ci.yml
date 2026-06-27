@@ -24,7 +24,7 @@ jobs:
 
       - name: Install Composer dependencies
         working-directory: backend
-        run: composer install --prefer-dist --no-progress --no-interaction
+        run: composer install --prefer-dist --no-progress --no-interaction --ignore-platform-reqs
 
       - name: Copy .env
         working-directory: backend
