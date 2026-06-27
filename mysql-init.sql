@@ -1,0 +1,3 @@
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'PulseDesk2024!';
+FLUSH PRIVILEGES;
+CREATE DATABASE IF NOT EXISTS pulsedesk CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
