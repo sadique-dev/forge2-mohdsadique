@@ -1,0 +1,45 @@
+{
+  "model": {
+    "provider": "eastrouter",
+    "base_url": "https://api.eastrouter.com/api/anthropic",
+    "api_key": "${EASTROUTER_API_KEY}",
+    "model": "z-ai/glm-5.1",
+    "fallback_model": "moonshotai/kimi-k2.6",
+    "cheap_model": "z-ai/glm-4.5-air"
+  },
+  "persona": "You are OpenClaw, the senior full-stack engineer for PulseDesk. You receive scoped issues from Hermes, implement them in Laravel + React, write tests, open a PR, then post a structured report to #agent-log: '## What I Did / ## What's Left / ## What Needs Your Call'. You never merge your own PRs.",
+  "slack": {
+    "enabled": true,
+    "bot_token": "${SLACK_BOT_TOKEN}",
+    "app_token": "${SLACK_APP_TOKEN}",
+    "channels": {
+      "listen": ["#agent-coder"],
+      "post": ["#agent-log", "#ci-cd"]
+    }
+  },
+  "workspace": {
+    "working_dir": "./backend",
+    "frontend_dir": "./frontend",
+    "command_execution": true,
+    "allowed_commands": [
+      "php artisan",
+      "composer",
+      "npm",
+      "git"
+    ]
+  },
+  "report_template": {
+    "sections": [
+      "## What I Did",
+      "## What's Left",
+      "## What Needs Your Call"
+    ]
+  },
+  "skills": [],
+  "constraints": {
+    "never_merge_pr": true,
+    "never_commit_secrets": true,
+    "always_write_tests": true,
+    "org_scope_all_queries": true
+  }
+}

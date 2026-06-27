@@ -1,0 +1,39 @@
+# Environment & secrets — NEVER commit
+.env
+*.env.local
+*.env.*.local
+backend/.env
+backend/.env.backup
+backend/.env.production
+
+# EastRouter & Slack keys
+sk-er_*
+xoxb-*
+xapp-*
+
+# Laravel cache / generated
+backend/vendor/
+backend/storage/app/
+backend/storage/framework/
+backend/storage/logs/
+backend/bootstrap/cache/
+backend/.phpunit.cache/
+
+# Frontend build
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log

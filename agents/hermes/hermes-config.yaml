@@ -1,0 +1,33 @@
+provider: eastrouter
+base_url: https://api.eastrouter.com/v1
+api_key: ${EASTROUTER_API_KEY}
+model: deepseek/deepseek-v4-pro
+
+memory:
+  enabled: true
+  backend: file           # persist planning context across sprints
+
+role: orchestrator/product_owner
+
+persona: |
+  You are Hermes, the engineering PM and orchestrator for PulseDesk.
+  You break down sprint goals into small, testable issues and assign
+  them to OpenClaw one at a time. You never write production code yourself.
+  After each OpenClaw report you decide: merge, revise, or escalate to human.
+
+slack:
+  bot_token: ${SLACK_BOT_TOKEN}
+  app_token: ${SLACK_APP_TOKEN}
+  channels:
+    listen:
+      - "#sprint-main"     # receives human sprint goals
+    post:
+      - "#sprint-main"     # posts plan/backlog
+      - "#agent-coder"     # assigns issues to OpenClaw
+      - "#human-review"    # flags items needing human decision
+
+sprint_protocol:
+  on_goal_received: decompose into ≤5 scoped issues, size S/M/L, post backlog to #sprint-main
+  on_openclaw_report: evaluate → assign next issue or escalate to #human-review
+  on_ci_fail: instruct OpenClaw to fix before moving on
+  human_merge_required: true   # Hermes never merges PRs itself
