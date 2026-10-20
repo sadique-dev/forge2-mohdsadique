@@ -1,3 +1,11 @@
+# live deployement
+Frontend (Vercel): https://frontend-o5eh7ankm-mohdsadique2026-5003s-projects.vercel.app?utm_source=chatgpt.com
+
+
+
+
+
+
 # PulseDesk — Multi-Tenant Support-Desk SaaS
 
 > **Forge 2 · Edition 1 submission**  
